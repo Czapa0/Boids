@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GPU">
+      <UniqueIdentifier>{5d45dc92-f65a-485c-8089-45c4aabb9827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GPU\Source">
+      <UniqueIdentifier>{87d3d967-55dc-4552-a369-59da56358c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CPU">
+      <UniqueIdentifier>{cc19803f-21ed-4806-b2e1-067975a04a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{c12e3701-48fa-4589-a48d-90ca08b4d80b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Configs">
+      <UniqueIdentifier>{c3d98e1a-186f-4df7-98db-2d778d89a631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Shaders">
+      <UniqueIdentifier>{a72e5de9-8a2c-4288-91d9-3a5ca39f5f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Imgui">
+      <UniqueIdentifier>{1aca6397-a69e-4d02-99ab-33d1929aa7f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Imgui\Headers">
+      <UniqueIdentifier>{eb571eb0-d8bc-486a-99e5-b5e74f68defb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Imgui\Source">
+      <UniqueIdentifier>{2b159853-3785-4ed2-b5e1-2ca84849f4ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GPU\Headers">
+      <UniqueIdentifier>{b71bae28-b8b1-4dc5-bc05-7aec1696c743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Source">
+      <UniqueIdentifier>{ce0d52e3-d57c-4004-96e5-2388705f6abc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Headers">
+      <UniqueIdentifier>{039db326-6958-49b3-8e70-db231bbfd929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CPU\Source">
+      <UniqueIdentifier>{341ac790-15fc-4de3-992a-97f2323ef80e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CPU\Headers">
+      <UniqueIdentifier>{d2eed2fb-11cd-4cb4-8fd2-107d930e8c47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kernel.h">
+      <Filter>GPU\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imconfig.h">
+      <Filter>Shared\Imgui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imgui.h">
+      <Filter>Shared\Imgui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imgui_impl_glfw.h">
+      <Filter>Shared\Imgui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imgui_impl_opengl3.h">
+      <Filter>Shared\Imgui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imgui_internal.h">
+      <Filter>Shared\Imgui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imstb_rectpack.h">
+      <Filter>Shared\Imgui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imstb_textedit.h">
+      <Filter>Shared\Imgui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imstb_truetype.h">
+      <Filter>Shared\Imgui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imgui_impl_opengl3_loader.h">
+      <Filter>Shared\Imgui\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="main.hpp">
+      <Filter>Shared\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cudaMat4.hpp">
+      <Filter>Shared\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="glslUtility.hpp">
+      <Filter>Shared\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="utilityCore.hpp">
+      <Filter>Shared\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUkernel.h">
+      <Filter>CPU\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui.cpp">
+      <Filter>Shared\Imgui\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui_demo.cpp">
+      <Filter>Shared\Imgui\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui_draw.cpp">
+      <Filter>Shared\Imgui\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui_tables.cpp">
+      <Filter>Shared\Imgui\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui_widgets.cpp">
+      <Filter>Shared\Imgui\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui_impl_glfw.cpp">
+      <Filter>Shared\Imgui\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui_impl_opengl3.cpp">
+      <Filter>Shared\Imgui\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Shared\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="glslUtility.cpp">
+      <Filter>Shared\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="utilityCore.cpp">
+      <Filter>Shared\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUkernel.cpp">
+      <Filter>CPU\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu">
+      <Filter>GPU\Source</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="boid.frag.glsl">
+      <Filter>Shared\Shaders</Filter>
+    </None>
+    <None Include="boid.geom.glsl">
+      <Filter>Shared\Shaders</Filter>
+    </None>
+    <None Include="boid.vert.glsl">
+      <Filter>Shared\Shaders</Filter>
+    </None>
+    <None Include="boids.config">
+      <Filter>Shared\Configs</Filter>
+    </None>
+    <None Include="README.md" />
+  </ItemGroup>
+</Project>
