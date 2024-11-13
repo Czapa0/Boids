@@ -95,11 +95,10 @@
     <CudaCompile Include="kernel.cu" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="boid.frag.glsl" />
-    <None Include="boid.geom.glsl" />
-    <None Include="boid.vert.glsl" />
     <None Include="boids.config" />
-    <None Include="README.md" />
+    <None Include="shaders\boid.frag.glsl" />
+    <None Include="shaders\boid.geom.glsl" />
+    <None Include="shaders\boid.vert.glsl" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CPUkernel.h" />
@@ -113,7 +112,7 @@
     <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imstb_rectpack.h" />
     <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imstb_textedit.h" />
     <ClInclude Include="external\include\ocornut-imgui-b81bd7e\imstb_truetype.h" />
-    <ClInclude Include="glslUtility.hpp" />
+    <ClInclude Include="glslUtility\glslUtility.hpp" />
     <ClInclude Include="kernel.h" />
     <ClInclude Include="main.hpp" />
     <ClInclude Include="utilityCore.hpp" />
@@ -127,7 +126,7 @@
     <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui_impl_opengl3.cpp" />
     <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui_tables.cpp" />
     <ClCompile Include="external\include\ocornut-imgui-b81bd7e\imgui_widgets.cpp" />
-    <ClCompile Include="glslUtility.cpp" />
+    <ClCompile Include="glslUtility\glslUtility.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="utilityCore.cpp" />
   </ItemGroup>

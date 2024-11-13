@@ -150,9 +150,9 @@ void initShaders(GLuint * program) {
   GLint location;
 
   program[PROG_BOID] = glslUtility::createProgram(
-    "boid.vert.glsl",
-    "boid.geom.glsl",
-    "boid.frag.glsl", attributeLocations, 2);
+    "shaders/boid.vert.glsl",
+    "shaders/boid.geom.glsl",
+    "shaders/boid.frag.glsl", attributeLocations, 2);
     glUseProgram(program[PROG_BOID]);
 
     if ((location = glGetUniformLocation(program[PROG_BOID], "u_projMatrix")) != -1) {

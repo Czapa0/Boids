@@ -12,7 +12,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include "utilityCore.hpp"
-#include "glslUtility.hpp"
+#include "glslUtility/glslUtility.hpp"
 #include "kernel.h"
 #include "CPUkernel.h"
 #include <Windows.h>

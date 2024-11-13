@@ -81,14 +81,14 @@
     <ClInclude Include="cudaMat4.hpp">
       <Filter>Shared\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="glslUtility.hpp">
+    <ClInclude Include="CPUkernel.h">
+      <Filter>CPU\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="glslUtility\glslUtility.hpp">
       <Filter>Shared\Headers</Filter>
     </ClInclude>
     <ClInclude Include="utilityCore.hpp">
       <Filter>Shared\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="CPUkernel.h">
-      <Filter>CPU\Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -116,14 +116,14 @@
     <ClCompile Include="main.cpp">
       <Filter>Shared\Source</Filter>
     </ClCompile>
-    <ClCompile Include="glslUtility.cpp">
-      <Filter>Shared\Source</Filter>
+    <ClCompile Include="CPUkernel.cpp">
+      <Filter>CPU\Source</Filter>
     </ClCompile>
     <ClCompile Include="utilityCore.cpp">
       <Filter>Shared\Source</Filter>
     </ClCompile>
-    <ClCompile Include="CPUkernel.cpp">
-      <Filter>CPU\Source</Filter>
+    <ClCompile Include="glslUtility\glslUtility.cpp">
+      <Filter>Shared\Source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -132,18 +132,17 @@
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="boid.frag.glsl">
-      <Filter>Shared\Shaders</Filter>
-    </None>
-    <None Include="boid.geom.glsl">
-      <Filter>Shared\Shaders</Filter>
-    </None>
-    <None Include="boid.vert.glsl">
-      <Filter>Shared\Shaders</Filter>
-    </None>
     <None Include="boids.config">
       <Filter>Shared\Configs</Filter>
     </None>
-    <None Include="README.md" />
+    <None Include="shaders\boid.frag.glsl">
+      <Filter>Shared\Shaders</Filter>
+    </None>
+    <None Include="shaders\boid.geom.glsl">
+      <Filter>Shared\Shaders</Filter>
+    </None>
+    <None Include="shaders\boid.vert.glsl">
+      <Filter>Shared\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

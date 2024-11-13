@@ -467,4 +467,6 @@ FodyWeavers.xsd
 
 # Added manually
 *.ini
-*external
+Boids/external/include/GL
+Boids/external/include/GLFW
+Boids/external/include/glm
